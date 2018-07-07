@@ -12,15 +12,14 @@ class ItemViewController: UIViewController {
 
     @IBOutlet weak var itemSegment: UISegmentedControl!
     
-    @IBOutlet weak var viewFlight: UIView!
-    @IBOutlet weak var viewPhone: UIView!
-    @IBOutlet weak var viewLuggage: UIView!
+    @IBOutlet weak var segmentImage: UIImageView!
     
-    let screenSize:CGRect = UIScreen.main.bounds
+    //let screenSize:CGRect = UIScreen.main.bounds
     
     override func viewDidLoad() {
         super.viewDidLoad()
         itemSegment.selectedSegmentIndex = 0
+        segmentImage.image = UIImage(named: "phone")
 
         // Do any additional setup after loading the view.
     }
@@ -34,17 +33,11 @@ class ItemViewController: UIViewController {
         switch itemSegment.selectedSegmentIndex
         {
         case 0:
-            viewFlight.frame.size.height = screenSize.height*0
-            viewLuggage.frame.size.height = screenSize.height*0
-            viewPhone.frame.size.height = screenSize.height*0.8
+            segmentImage.image = UIImage(named: "phone")
         case 1:
-            viewFlight.frame.size.height = screenSize.height*0
-            viewLuggage.frame.size.height = screenSize.height*0.8
-            viewPhone.frame.size.height = screenSize.height*0
+            segmentImage.image = UIImage(named: "luggage")
         case 2:
-            viewFlight.frame.size.height = screenSize.height*0.8
-            viewLuggage.frame.size.height = screenSize.height*0
-            viewPhone.frame.size.height = screenSize.height*0
+            segmentImage.image = UIImage(named: "flight")
         default:
             break
         }
