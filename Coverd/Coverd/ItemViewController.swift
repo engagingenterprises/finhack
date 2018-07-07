@@ -10,16 +10,17 @@ import UIKit
 
 class ItemViewController: UIViewController {
 
-    @IBOutlet weak var itemSegment: UISegmentedControl!
+    @IBOutlet weak var segmentControl: UISegmentedControl!
     
-    @IBOutlet weak var segmentImage: UIImageView!
+    @IBOutlet weak var imageDisplay: UIImageView!
     
-    //let screenSize:CGRect = UIScreen.main.bounds
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        itemSegment.selectedSegmentIndex = 0
-        segmentImage.image = UIImage(named: "phone")
+        
+        segmentControl.selectedSegmentIndex = 0
+        imageDisplay.image = UIImage(named: "phone")
+        
 
         // Do any additional setup after loading the view.
     }
@@ -29,15 +30,15 @@ class ItemViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func itemChoose(_ sender: UISegmentedControl) {
-        switch itemSegment.selectedSegmentIndex
+    @IBAction func selectSegment(_ sender: UISegmentedControl) {
+        switch segmentControl.selectedSegmentIndex
         {
         case 0:
-            segmentImage.image = UIImage(named: "phone")
+            imageDisplay.image = UIImage(named: "phone")
         case 1:
-            segmentImage.image = UIImage(named: "luggage")
+            imageDisplay.image = UIImage(named: "luggage")
         case 2:
-            segmentImage.image = UIImage(named: "flight")
+            imageDisplay.image = UIImage(named: "flight")
         default:
             break
         }

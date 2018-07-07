@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		004F95A020F119A000D94587 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004F959F20F119A000D94587 /* ItemViewController.swift */; };
 		00656C7E20F0A94C00E4B8D5 /* Walkthrough2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00656C7D20F0A94C00E4B8D5 /* Walkthrough2ViewController.swift */; };
 		00656C8020F0BD2100E4B8D5 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00656C7F20F0BD2100E4B8D5 /* WalkthroughViewController.swift */; };
 		00656C8220F0C06F00E4B8D5 /* firstCustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00656C8120F0C06F00E4B8D5 /* firstCustomSegue.swift */; };
@@ -15,7 +16,6 @@
 		00656C8920F0CD7800E4B8D5 /* Lato in Resources */ = {isa = PBXBuildFile; fileRef = 00656C8720F0CD7700E4B8D5 /* Lato */; };
 		00656C8A20F0CD7800E4B8D5 /* Montserrat in Resources */ = {isa = PBXBuildFile; fileRef = 00656C8820F0CD7700E4B8D5 /* Montserrat */; };
 		00656C8C20F0E95400E4B8D5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00656C8B20F0E95400E4B8D5 /* Images.xcassets */; };
-		00656C8E20F0F3F500E4B8D5 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00656C8D20F0F3F500E4B8D5 /* ItemViewController.swift */; };
 		00656C9020F1013B00E4B8D5 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00656C8F20F1013B00E4B8D5 /* RoundedButton.swift */; };
 		00656C9220F109F300E4B8D5 /* ChatbotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00656C9120F109F300E4B8D5 /* ChatbotViewController.swift */; };
 		00D2F59220F0947C0082D5C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D2F59120F0947C0082D5C1 /* AppDelegate.swift */; };
@@ -48,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		004F959F20F119A000D94587 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		00656C7D20F0A94C00E4B8D5 /* Walkthrough2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Walkthrough2ViewController.swift; sourceTree = "<group>"; };
 		00656C7F20F0BD2100E4B8D5 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
 		00656C8120F0C06F00E4B8D5 /* firstCustomSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstCustomSegue.swift; sourceTree = "<group>"; };
@@ -56,7 +57,6 @@
 		00656C8720F0CD7700E4B8D5 /* Lato */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Lato; path = ../../../../Downloads/fonts/Lato; sourceTree = "<group>"; };
 		00656C8820F0CD7700E4B8D5 /* Montserrat */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Montserrat; path = ../../../../Downloads/fonts/Montserrat; sourceTree = "<group>"; };
 		00656C8B20F0E95400E4B8D5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		00656C8D20F0F3F500E4B8D5 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		00656C8F20F1013B00E4B8D5 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		00656C9120F109F300E4B8D5 /* ChatbotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatbotViewController.swift; sourceTree = "<group>"; };
 		00D2F58E20F0947C0082D5C1 /* Coverd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coverd.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,7 +145,7 @@
 				00D2F59320F0947C0082D5C1 /* DashboardViewController.swift */,
 				00656C9120F109F300E4B8D5 /* ChatbotViewController.swift */,
 				00D2F59520F0947C0082D5C1 /* Main.storyboard */,
-				00656C8D20F0F3F500E4B8D5 /* ItemViewController.swift */,
+				004F959F20F119A000D94587 /* ItemViewController.swift */,
 				00656C8120F0C06F00E4B8D5 /* firstCustomSegue.swift */,
 				00656C8320F0C15500E4B8D5 /* secondCustomSegue.swift */,
 				00656C7F20F0BD2100E4B8D5 /* WalkthroughViewController.swift */,
@@ -432,7 +432,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00656C8E20F0F3F500E4B8D5 /* ItemViewController.swift in Sources */,
 				00D2F59420F0947C0082D5C1 /* DashboardViewController.swift in Sources */,
 				00656C7E20F0A94C00E4B8D5 /* Walkthrough2ViewController.swift in Sources */,
 				00656C9220F109F300E4B8D5 /* ChatbotViewController.swift in Sources */,
@@ -441,6 +440,7 @@
 				00656C8220F0C06F00E4B8D5 /* firstCustomSegue.swift in Sources */,
 				00656C8420F0C15500E4B8D5 /* secondCustomSegue.swift in Sources */,
 				00D2F59220F0947C0082D5C1 /* AppDelegate.swift in Sources */,
+				004F95A020F119A000D94587 /* ItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
