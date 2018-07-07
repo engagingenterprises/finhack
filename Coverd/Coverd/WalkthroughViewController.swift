@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DestinationViewController: UIViewController {
+class WalkthroughViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +19,7 @@ class DestinationViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "walkthrough1.png")!);
     }
     
 

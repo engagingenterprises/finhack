@@ -13,7 +13,7 @@
         <!--Dashboard-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="dashboard" id="BYZ-38-t0r" customClass="DashboardViewController" customModule="Coverd" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DashboardViewController" customModule="Coverd" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,19 +29,10 @@
         <!--Destination-->
         <scene sceneID="nEW-BD-Bmt">
             <objects>
-                <viewController storyboardIdentifier="destination" id="LvW-WY-drg" customClass="DestinationViewController" customModule="Coverd" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LvW-WY-drg" customClass="WalkthroughViewController" customModule="Coverd" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4uV-Mg-FbK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3t-LS-cMk">
-                                <rect key="frame" x="140" y="313" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="GD0-au-b0N"/>
                     </view>
@@ -54,7 +45,7 @@
         <!--Navigation Controller-->
         <scene sceneID="TAt-jz-CSf">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uhB-nG-OGj" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="dashboard" automaticallyAdjustsScrollViewInsets="NO" id="uhB-nG-OGj" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NiO-lY-G0y">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -72,7 +63,7 @@
         <!--Navigation Controller-->
         <scene sceneID="w1n-EM-yLe">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ivs-OS-8Lw" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="walkthrough" automaticallyAdjustsScrollViewInsets="NO" id="ivs-OS-8Lw" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gFI-RF-mUf">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
