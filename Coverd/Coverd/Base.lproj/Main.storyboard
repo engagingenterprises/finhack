@@ -581,10 +581,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="reward" translatesAutoresizingMaskIntoConstraints="NO" id="KCb-KG-q9P">
-                                <rect key="frame" x="14" y="80" width="361" height="334"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2aj-By-M4M">
                                 <rect key="frame" x="11" y="25" width="60" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -593,6 +589,10 @@
                                     <segue destination="aLK-63-wIZ" kind="custom" customClass="secondCustomSegue" customModule="Coverd" customModuleProvider="target" id="v1u-7K-jXw"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="reward" translatesAutoresizingMaskIntoConstraints="NO" id="KCb-KG-q9P">
+                                <rect key="frame" x="24" y="121" width="327" height="424"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="NJk-gm-xvP"/>
@@ -610,7 +610,7 @@
         <image name="claim 2" width="335" height="135"/>
         <image name="confirmation" width="375" height="464"/>
         <image name="insurance" width="336" height="409"/>
-        <image name="reward" width="111" height="103"/>
+        <image name="reward" width="1005" height="1278"/>
         <image name="reward 2" width="335" height="135"/>
         <image name="shieldPurple" width="166" height="192"/>
         <image name="summary" width="336" height="477"/>
@@ -618,10 +618,9 @@
         <image name="walkthrough2" width="333" height="244"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Z6v-0M-Pox"/>
         <segue reference="vJd-MM-6pz"/>
         <segue reference="F03-pb-789"/>
-        <segue reference="uoc-QR-Pmz"/>
+        <segue reference="v1u-7K-jXw"/>
         <segue reference="Fvd-tX-6WR"/>
     </inferredMetricsTieBreakers>
 </document>
