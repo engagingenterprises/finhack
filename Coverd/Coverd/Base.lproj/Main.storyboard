@@ -41,8 +41,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Skip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="131-bJ-aAl">
-                                <rect key="frame" x="174" y="620" width="28" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Skip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="131-bJ-aAl">
+                                <rect key="frame" x="163" y="621" width="60" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
                                 <nil key="textColor"/>
@@ -101,8 +101,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABW-uD-HTs">
-                                <rect key="frame" x="169" y="622" width="43" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="152" y="617" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
                                 <state key="normal" title="Sign in">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -117,7 +117,6 @@
                         <viewLayoutGuide key="safeArea" id="pi0-em-44Q"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="M9r-62-PdO" appends="YES" id="tDK-wO-9dg"/>
-                            <outletCollection property="gestureRecognizers" destination="QNk-ax-Wdt" appends="YES" id="Vun-FW-kiF"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="rud-y2-N6H"/>
@@ -125,10 +124,9 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VVA-EM-URh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="M9r-62-PdO">
                     <connections>
-                        <segue destination="ABy-oc-kRt" kind="custom" customClass="secondCustomSegue" customModule="Coverd" customModuleProvider="target" id="Z7b-nb-UVT"/>
+                        <segue destination="ABy-oc-kRt" kind="custom" customClass="secondCustomSegue" customModule="Coverd" customModuleProvider="target" id="UAM-Be-UVi"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="right" id="QNk-ax-Wdt"/>
             </objects>
             <point key="canvasLocation" x="1554" y="1268"/>
         </scene>
@@ -147,7 +145,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="peter.chan@gmail.com" borderStyle="roundedRect" placeholder="Email Address" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="rZE-sd-dEs">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="kelly@gmail.com" borderStyle="roundedRect" placeholder="Email Address" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="rZE-sd-dEs">
                                 <rect key="frame" x="24" y="189" width="335" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -173,7 +171,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJb-Sl-c53">
-                                <rect key="frame" x="113" y="400" width="150" height="30"/>
+                                <rect key="frame" x="101" y="400" width="180" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
                                 <state key="normal" title="Forgot your password?">
@@ -270,8 +268,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Insuranced Items" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pi6-kR-FKI">
-                                <rect key="frame" x="20" y="35" width="238" height="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Insured Items" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pi6-kR-FKI">
+                                <rect key="frame" x="20" y="35" width="188" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="26"/>
                                 <nil key="textColor"/>
@@ -282,7 +280,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="buy 2"/>
                                 <connections>
-                                    <segue destination="KZY-7Y-n1s" kind="show" id="5Iy-Xp-yZP"/>
+                                    <segue destination="KZY-7Y-n1s" kind="custom" customClass="firstCustomSegue" customModule="Coverd" customModuleProvider="target" id="cJf-Om-LiT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kO-rN-NcL" userLabel="Btn_rewards">
@@ -290,7 +288,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="claim 2"/>
                                 <connections>
-                                    <segue destination="keR-qa-QCq" kind="show" id="7cz-qV-jJw"/>
+                                    <segue destination="keR-qa-QCq" kind="custom" customClass="firstCustomSegue" customModule="Coverd" customModuleProvider="target" id="zju-dm-Gy0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDP-fW-iI2" userLabel="Btn_buy">
@@ -327,19 +325,27 @@
                                     <action selector="selectSegment:" destination="KZY-7Y-n1s" eventType="valueChanged" id="TGt-Fe-wuC"/>
                                 </connections>
                             </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MDL-2m-dlG">
+                                <rect key="frame" x="32" y="177" width="310" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZL-XL-arn">
                                 <rect key="frame" x="127" y="600" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
                                 <state key="normal" title="Add to cart"/>
                                 <connections>
-                                    <segue destination="T4j-0m-Ajt" kind="show" id="7hc-b1-Hh5"/>
+                                    <segue destination="T4j-0m-Ajt" kind="custom" customClass="firstCustomSegue" customModule="Coverd" customModuleProvider="target" id="AOZ-QH-zdW"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MDL-2m-dlG">
-                                <rect key="frame" x="32" y="177" width="310" height="350"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVK-Rz-ckD">
+                                <rect key="frame" x="16" y="21" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="aLK-63-wIZ" kind="custom" customClass="secondCustomSegue" customModule="Coverd" customModuleProvider="target" id="G6G-EZ-eM5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="JP2-RI-Uuw"/>
@@ -353,7 +359,7 @@
             </objects>
             <point key="canvasLocation" x="3671" y="1995"/>
         </scene>
-        <!--Chatbot View Controller-->
+        <!--Title-->
         <scene sceneID="t8F-5n-2k3">
             <objects>
                 <viewController id="keR-qa-QCq" customClass="ChatbotViewController" customModule="Coverd" customModuleProvider="target" sceneMemberID="viewController">
@@ -391,10 +397,19 @@
                                     <action selector="sendMessage:" destination="keR-qa-QCq" eventType="touchUpInside" id="E4B-VD-ySp"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMt-iR-gi8">
+                                <rect key="frame" x="21" y="21" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Menu"/>
+                                <connections>
+                                    <segue destination="aLK-63-wIZ" kind="custom" customClass="secondCustomSegue" customModule="Coverd" customModuleProvider="target" id="FGm-G3-LM4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="z74-W8-xRQ"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="F3l-2y-2Vz"/>
                     <connections>
                         <outlet property="chipResponse" destination="CZ8-fS-tSm" id="bLl-hb-djv"/>
                         <outlet property="messageField" destination="9MZ-Mj-cIE" id="CXq-Ws-YP3"/>
@@ -413,7 +428,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="summary" translatesAutoresizingMaskIntoConstraints="NO" id="bce-z9-Yln">
-                                <rect key="frame" x="28" y="49" width="319" height="463"/>
+                                <rect key="frame" x="28" y="65" width="319" height="463"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62s-9o-2JM">
@@ -422,7 +437,15 @@
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
                                 <state key="normal" title="Confirm"/>
                                 <connections>
-                                    <segue destination="q1N-8f-mhL" kind="custom" customClass="firstCustomSegue" customModule="Coverd" customModuleProvider="target" id="iD1-71-PFy"/>
+                                    <segue destination="q1N-8f-mhL" kind="custom" customClass="firstCustomSegue" customModule="Coverd" customModuleProvider="target" id="Z6v-0M-Pox"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ey6-d3-OQW">
+                                <rect key="frame" x="16" y="21" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="KZY-7Y-n1s" kind="custom" customClass="secondCustomSegue" customModule="Coverd" customModuleProvider="target" id="F03-pb-789"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -442,16 +465,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkout" translatesAutoresizingMaskIntoConstraints="NO" id="3lL-Th-9x1">
+                                <rect key="frame" x="31" y="65" width="312" height="465"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGF-Gd-3hi">
                                 <rect key="frame" x="127" y="600" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
                                 <state key="normal" title="Pay now"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkout" translatesAutoresizingMaskIntoConstraints="NO" id="3lL-Th-9x1">
-                                <rect key="frame" x="31" y="50" width="312" height="465"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rR-o8-ebU">
+                                <rect key="frame" x="16" y="21" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="T4j-0m-Ajt" kind="custom" customClass="secondCustomSegue" customModule="Coverd" customModuleProvider="target" id="vJd-MM-6pz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="5mq-7Y-9xi"/>
@@ -473,6 +504,10 @@
         <image name="walkthrough2" width="333" height="244"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vgn-Ay-0eW"/>
+        <segue reference="Z6v-0M-Pox"/>
+        <segue reference="vJd-MM-6pz"/>
+        <segue reference="F03-pb-789"/>
+        <segue reference="FGm-G3-LM4"/>
+        <segue reference="Fvd-tX-6WR"/>
     </inferredMetricsTieBreakers>
 </document>
