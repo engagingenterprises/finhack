@@ -15,7 +15,7 @@ class DashboardViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        checkUserLoggedIn()
+        checkIfUserIsLoggedIn()
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,20 +25,25 @@ class DashboardViewController: UIViewController {
 
     func checkIfUserIsLoggedIn() {
         if Auth.auth().currentUser?.uid == nil {
+//            perform(Selector(handleLogout), with: nil, afterDelay: 0)
+            
             perform(#selector(handleLogout), with: nil, afterDelay: 0)
+            
+          
+            
         } //else {
         //  print("Logged in")
         //}
     }
     
-    func handleLogout() {
+   @objc func handleLogout() {
         do {
             try Auth.auth().signOut()
         } catch let logoutError {
             print(logoutError)
         }
         
-        let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginNavigationController") as! UINavigationController
+        let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "destination") as! UINavigationController
         self.present(loginViewController, animated: true, completion: nil)
         
         //let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController

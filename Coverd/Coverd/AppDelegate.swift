@@ -21,8 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let db = Firestore.firestore()
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        let storyboard = UIStoryboard(name: "dashboard", bundle: nil)
-        let initialViewController = storyboard.instantiateViewController(withIdentifier: "DashboardViewController")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let initialViewController = storyboard.instantiateViewController(withIdentifier: "dashboard")
         self.window?.rootViewController = initialViewController
         self.window?.makeKeyAndVisible()
         
