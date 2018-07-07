@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uhB-nG-OGj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ABy-oc-kRt">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,73 +10,65 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Dashboard-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Walkthrough View Controller-->
+        <scene sceneID="Iz8-g2-tJg">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="DashboardViewController" customModule="Coverd" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Dashboard" id="7VS-RH-SaC"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="876" y="-215.44227886056973"/>
-        </scene>
-        <!--Destination-->
-        <scene sceneID="nEW-BD-Bmt">
-            <objects>
-                <viewController id="LvW-WY-drg" customClass="WalkthroughViewController" customModule="Coverd" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4uV-Mg-FbK">
+                <viewController id="ABy-oc-kRt" customClass="WalkthroughViewController" customModule="Coverd" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7xv-Qf-Xrr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="GD0-au-b0N"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="Maw-vt-g4R"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="xB0-c0-r2O" appends="YES" id="Get-Xv-5mk"/>
+                        </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Destination" id="GQN-HL-6vk"/>
+                    <navigationItem key="navigationItem" id="fkP-h0-dd3"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UVj-dw-3oe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="876" y="577.9610194902549"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="TAt-jz-CSf">
-            <objects>
-                <navigationController storyboardIdentifier="dashboard" automaticallyAdjustsScrollViewInsets="NO" id="uhB-nG-OGj" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NiO-lY-G0y">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9gL-NA-ky8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="xB0-c0-r2O">
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Uqz-9B-tt0"/>
+                        <action selector="swipeHandler:" destination="ABy-oc-kRt" id="4VO-RD-aM8"/>
+                        <segue destination="XDo-Qw-F63" kind="custom" customClass="firstCustomSegue" customModule="Coverd" customModuleProvider="target" id="2YG-CM-kBc"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="q6D-MS-bJi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-63.200000000000003" y="-215.44227886056973"/>
+            <point key="canvasLocation" x="876" y="1268"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="w1n-EM-yLe">
+        <!--View Controller-->
+        <scene sceneID="6CN-zu-XR3">
             <objects>
-                <navigationController storyboardIdentifier="walkthrough" automaticallyAdjustsScrollViewInsets="NO" id="ivs-OS-8Lw" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gFI-RF-mUf">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
+                <viewController id="XDo-Qw-F63" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wiu-hq-d7H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AqV-bP-MvE">
+                                <rect key="frame" x="154" y="342" width="56" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="pi0-em-44Q"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="M9r-62-PdO" appends="YES" id="tDK-wO-9dg"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="rud-y2-N6H"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VVA-EM-URh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="M9r-62-PdO">
                     <connections>
-                        <segue destination="LvW-WY-drg" kind="relationship" relationship="rootViewController" id="BeF-tB-RYo"/>
+                        <segue destination="ABy-oc-kRt" kind="custom" customClass="secondCustomSegue" customModule="Coverd" customModuleProvider="target" id="MCt-e0-oDv"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Z47-Bg-bdM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-63.200000000000003" y="577.9610194902549"/>
+            <point key="canvasLocation" x="1686" y="1268"/>
         </scene>
     </scenes>
 </document>

@@ -43,7 +43,7 @@ class DashboardViewController: UIViewController {
             print(logoutError)
         }
         
-        let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "destination") as! UINavigationController
+        let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "walkthrough") as! UINavigationController
         self.present(loginViewController, animated: true, completion: nil)
         
         //let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController

@@ -1,5 +1,5 @@
 //
-//  TestViewController.swift
+//  DestinationViewController.swift
 //  Coverd
 //
 //  Created by Andrew Yip on 7/7/18.
@@ -8,26 +8,32 @@
 
 import UIKit
 
-class WalkthroughViewController: UIViewController {
+class Walkthrough2ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        assignbackground()
     }
 
-    //@IBAction func swipeHandler(_ sender: UISwipeGestureRecognizer) {
-    //    if sender.state == .ended {
-    //        let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "B") as! UINavigationController
-   //         self.present(loginViewController, animated: true, completion: nil)
-   //     }
-   // }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    func assignbackground(){
+        let background = UIImage(named: "walkthrough1")
+        
+        var imageView : UIImageView!
+        imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIViewContentMode.scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.image = background
+        imageView.center = view.center
+        view.addSubview(imageView)
+        self.view.sendSubview(toBack: imageView)
+    }
+    
     /*
     // MARK: - Navigation
 
