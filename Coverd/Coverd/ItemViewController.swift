@@ -20,6 +20,7 @@ class ItemViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        itemSegment.selectedSegmentIndex = 0
 
         // Do any additional setup after loading the view.
     }

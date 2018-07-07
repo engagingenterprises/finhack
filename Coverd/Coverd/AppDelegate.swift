@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import ApiAI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,6 +26,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let initialViewController = storyboard.instantiateViewController(withIdentifier: "A")
 //        self.window?.rootViewController = initialViewController
 //        self.window?.makeKeyAndVisible()
+        
+        let configuration = AIDefaultConfiguration()
+        configuration.clientAccessToken = "f3527f1199b746278c1d48c7f950b0a3"
+        
+        let apiai = ApiAI.shared()
+        apiai?.configuration = configuration
         
         return true
     }
